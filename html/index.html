@@ -1,0 +1,56 @@
+<html>
+
+<head>
+
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+
+<body>
+    <div class="container py-5">
+
+        <div class="col-md-8 p-5 mx-auto mt-4 text-center bac_form">
+
+            <h2 class="text-info mb-4">Smart Login System</h2>
+
+            <div class="mb-4">
+                <input type="email" id="userName" placeholder="Enter your email" class="form-control text-white bg-transparent">
+            </div>
+
+            <div class="mb-3">
+                <input type="password" id="password" placeholder="Enter your password" class="form-control text-white bg-transparent">
+            </div>
+
+
+            <div class="alert text-danger d-none mt-4 mb-0 p-0" id="wrongInp">
+                <p>fill the inputs first</p>
+              </div>
+
+
+            <div class="alert text-danger d-none mt-4 mb-0 p-0" id="wrongacc">
+                <p>your email or password is incorrect</p>
+              </div>
+
+            <a id="BtnLogin" onclick="Login()" class="w-100 btn btn-outline-info my-3 text-decoration-none">Login</a>
+
+
+            <p class=" my-2 text-white">don't have an accoount?
+                <a href="SignUP.html" class="text-white text-decoration-none ">Sign Up</a>
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

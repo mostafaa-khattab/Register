@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+  <title>SignUP Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+    
+  <div class="container py-5">
+
+    <div class="col-md-8 p-5 mx-auto mt-4 text-center bac_form">
+
+        <h2 class="text-info mb-4">Smart Login System</h2>
+
+        <div class="mb-3">
+            <input type="text" id="inputName" placeholder="Enter your name" class="form-control text-white bg-transparent">
+            <div class="alert text-danger d-none p-0" id="nameValid">
+              <p>include at least 3 letters starting with capital, second name is optional</p>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <input type="email" id="inputEmail" placeholder="Enter your email" class="form-control text-white bg-transparent">
+            <div class="alert text-danger d-none p-0" id="emailValid">
+              <p>name@example.com</p>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <input type="password" id="inputPassword" placeholder="Enter your password" class="form-control text-white bg-transparent">
+            <div class="alert text-danger d-none p-0" id="passValid">
+              <p>you must strenth your password, from 8 to 20 characters or Nambers</p>
+            </div>
+            
+        </div>
+        `
+        <div class="alert text-danger d-none mt-4 mb-0 p-0" id="alertinValid">
+          <p>sign Up failed ! Try again</p>
+        </div>
+
+        <a id="BtnLogin" onclick="sinUp()" class="w-100 btn btn-outline-info my-3 text-decoration-none">Sign Up</a>
+
+        <p class=" my-2  text-white">you have an accoount?
+            <a href="index.html" class="text-white text-decoration-none ">Sign in</a>
+        </p>
+
+        <a href="index.html" type="button" class="btn btn-outline-success px-5 text-white mt-3 d-none " id="disBtnSign">Sign In</a>
+
+
+    </div>
+
+</div>
+
+
+
+
+    <script src="../index.js"></script>
+</body>
+</html>
